@@ -337,6 +337,8 @@ DMTemplateBlockType;
 								// Content within a foreach block is rendered as a template itself.
 								DMTemplateEngine* engine = [DMTemplateEngine engineWithTemplate:blockContent];
 								engine.modifiers = self.modifiers;
+								engine.beginProcessorMarker = self.beginProcessorMarker;
+								engine.endProcessorMarker = self.endProcessorMarker;
 								for(NSUInteger i = 0; i < array.count; i++) {
 									id obj = [array objectAtIndex:i];
 									// Add the desired variable to the foreach block's 
