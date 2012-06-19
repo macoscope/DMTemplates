@@ -405,6 +405,9 @@ DMTemplateBlockType;
 								}
 							}
 							break;
+              
+            default:
+              ;
 					}
 				}
 				@catch(id exception) {
