@@ -890,7 +890,7 @@ DMTemplateBlockType;
 
 + (void)_removeCharactersInSet:(NSCharacterSet*)set string:(NSMutableString*)string {
 	NSRange matchRange, searchRange, replaceRange;
-	unsigned int length;
+	NSUInteger length;
 	
 	length = [string length];
 	matchRange = [string rangeOfCharacterFromSet:set options:NSLiteralSearch range:NSMakeRange(0, length)];
